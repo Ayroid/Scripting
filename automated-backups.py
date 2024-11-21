@@ -21,3 +21,9 @@ def backup_and_zip_files(source_folder, backup_folder):
 
 
 backup_and_zip_files("/home/ayroid/Downloads/images", "/home/ayroid/Documents/Backups")
+
+# To Automate these tasks use CRON jobs -
+
+# Open Crontab file: crontab -e
+# Add the following line to run the script every day at 12:00 PM: 0 12 * * * python3 /home/ayroid/Documents/Private/DevOps/automated-backups.py
+# Save and exit the crontab file. The script will now run every day at 12:00 PM.
